@@ -8,12 +8,13 @@
   ],
   "scripts": {
     "build": "turbo run build",
+    "build:ui":"turbo run build --filter=ui",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "eslint-config-custom": "*",
+    "eslint-config-custom": "workspace:*",
     "prettier": "latest",
     "turbo": "latest"
   },
@@ -21,5 +22,5 @@
     "node": ">=14.0.0"
   },
   "dependencies": {},
-  "packageManager": "npm@6.14.17"
+  "packageManager": "pnpm@7.23.0"
 }
